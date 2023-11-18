@@ -7,6 +7,7 @@ from users import views
 router = routers.DefaultRouter()
 router.register(r'typeUsers', views.TypeUserView, 'typeUsers')
 router.register(r'credentialsUsers', views.CredentialsUserView, 'credentialsUsers')
+router.register(r'users', views.UserView, 'users')
 
 urlpatterns = [
     path("api/v1/", include(router.urls)),
