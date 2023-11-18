@@ -1,0 +1,18 @@
+.user-info-container {
+    
+    width: 300px; 
+    padding: 15px; 
+    border-radius: 50px; 
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    margin: 20px; 
+}
+
+
+.user-info-container h1 {
+    margin: 5px 0;
+    font-size: 12px;
+    font-family: 'Open Sans Light', sans-serif;
+    color: rgb(71, 71, 71);
+    white-space: nowrap;
+}
