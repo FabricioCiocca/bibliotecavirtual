@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import TypeUser, CredentialsUser, User
+from .models import TypeUser, CredentialsUser, User, AcademicField, Specialty
 
 #Serializar es convertir los objetos de la bd en JSON
 class TypeUserSerializer(serializers.ModelSerializer):
@@ -18,3 +18,14 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
+
+class AcademicFieldSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AcademicField
+        fields = '__all__'
+
+class SpecialtySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Specialty
+        fields = '__all__'
+        

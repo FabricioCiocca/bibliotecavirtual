@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .serializer import TypeUserSerializer, CredentialsUserSerializer, UserSerializer
-from .models import TypeUser, CredentialsUser, User
+from .serializer import TypeUserSerializer, CredentialsUserSerializer, UserSerializer, AcademicFieldSerializer, SpecialtySerializer
+from .models import TypeUser, CredentialsUser, User, AcademicField, Specialty
 # Create your views here.
 
 class TypeUserView(viewsets.ModelViewSet):
@@ -14,3 +14,11 @@ class CredentialsUserView(viewsets.ModelViewSet):
 class UserView(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
+
+class AcademicFieldView(viewsets.ModelViewSet):
+    serializer_class = AcademicFieldSerializer
+    queryset = AcademicField.objects.all()
+
+class SpecialtyView(viewsets.ModelViewSet):
+    serializer_class = SpecialtySerializer
+    queryset = Specialty.objects.all()
